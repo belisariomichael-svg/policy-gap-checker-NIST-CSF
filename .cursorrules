@@ -1,0 +1,9 @@
+You are working on Policy Gap Checker (Next.js 14 App Router, TypeScript strict, Tailwind, vitest, zod, Google Gemini via @google/genai, Supabase Auth + Postgres).
+- Server-only code for anything touching GEMINI_API_KEY or the Gemini SDK (app/api/*, lib/gemini.ts). Never import it in client components.
+- Never hardcode keys. Use .env.local and keep .env.example current. The Supabase service_role key must never be used or committed; only the anon/publishable key is allowed in the browser.
+- Every Supabase table must have Row Level Security enabled with per-user policies (see supabase/schema.sql).
+- Validate all external input with lib/validate.ts and all model output with zod in lib/result.ts.
+- Do not log or store policy text. Saved reports contain results only.
+- Prefer small pure functions in lib/ with unit tests in __tests__/.
+- Keep components accessible: labels, aria-live for results, visible focus, no color-only meaning (status text is always shown).
+- Avoid over-engineering: no new dependencies unless the spec says so.
