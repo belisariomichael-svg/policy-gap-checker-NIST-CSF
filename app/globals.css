@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A0F1E;
+  /* faint grid, fixed so it stays still while the page scrolls */
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  color: #E6EDF7;
+  color-scheme: dark;
+}
+:focus-visible { outline: 2px solid #22D3EE; outline-offset: 2px; }
+/* the one glowing element on the page: the coverage score */
+.score-glow { text-shadow: 0 0 24px rgba(34, 211, 238, 0.45); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
