@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+        env:
+          # Build does not call the API; a placeholder keeps config checks happy.
+          GEMINI_API_KEY: ci-placeholder
+  # Deployment: Vercel's GitHub integration deploys every push to main after CI.
+  # Secrets (GEMINI_API_KEY) live in Vercel project settings, never in the repo.

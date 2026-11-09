@@ -1,0 +1,213 @@
+{
+  "summary": "The policy covers access control, training and basic role ownership well. Governance, risk assessment, monitoring, response and recovery are mostly missing or thin. Priority fixes are an incident response process, asset inventory and a risk assessment requirement.",
+  "findings": [
+    {
+      "control_id": "GV.OC",
+      "status": "partial",
+      "evidence": "supports our regulatory obligations",
+      "rationale": "Mentions regulatory obligations but names no specific laws, regulators or stakeholder expectations.",
+      "recommendation": "List the applicable regulations and stakeholder requirements this policy supports.",
+      "name": "Organizational Context",
+      "function": "Govern"
+    },
+    {
+      "control_id": "GV.RM",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No risk appetite, tolerance or risk management strategy is stated.",
+      "recommendation": "Add a section linking this policy to the organisation's risk appetite and risk management strategy.",
+      "name": "Risk Management Strategy",
+      "function": "Govern"
+    },
+    {
+      "control_id": "GV.RR",
+      "status": "covered",
+      "evidence": "The Chief Information Security Officer (CISO) is accountable for this policy.",
+      "rationale": "Names the accountable role and assigns department head responsibilities.",
+      "recommendation": "",
+      "name": "Roles, Responsibilities, and Authorities",
+      "function": "Govern"
+    },
+    {
+      "control_id": "GV.PO",
+      "status": "covered",
+      "evidence": "This policy is reviewed annually by the CISO.",
+      "rationale": "Policy has an owner and a defined annual review cycle.",
+      "recommendation": "",
+      "name": "Policy",
+      "function": "Govern"
+    },
+    {
+      "control_id": "GV.OV",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No reporting or management review of security risk results is described.",
+      "recommendation": "Require periodic reporting of security metrics and risks to senior management.",
+      "name": "Oversight",
+      "function": "Govern"
+    },
+    {
+      "control_id": "GV.SC",
+      "status": "partial",
+      "evidence": "Third parties with access to company data must sign a confidentiality agreement.",
+      "rationale": "Only confidentiality agreements are required; no due diligence, risk tiering or monitoring of suppliers.",
+      "recommendation": "Add supplier risk assessment, security requirements in contracts, and periodic reviews.",
+      "name": "Cybersecurity Supply Chain Risk Management",
+      "function": "Govern"
+    },
+    {
+      "control_id": "ID.AM",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No asset inventory or data classification requirement.",
+      "recommendation": "Require an inventory of systems, data and services with an owner for each.",
+      "name": "Asset Management",
+      "function": "Identify"
+    },
+    {
+      "control_id": "ID.RA",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No requirement to assess threats, vulnerabilities or impact.",
+      "recommendation": "Require periodic cybersecurity risk assessments with documented results.",
+      "name": "Risk Assessment",
+      "function": "Identify"
+    },
+    {
+      "control_id": "ID.IM",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No mechanism to improve security from tests, audits or incidents.",
+      "recommendation": "Add a lessons-learned and corrective action process.",
+      "name": "Improvement",
+      "function": "Identify"
+    },
+    {
+      "control_id": "PR.AA",
+      "status": "covered",
+      "evidence": "Access to systems is granted on a least-privilege basis and requires approval from the line manager.",
+      "rationale": "Covers least privilege, approval, MFA for remote access and periodic access reviews.",
+      "recommendation": "",
+      "name": "Identity Management, Authentication, and Access Control",
+      "function": "Protect"
+    },
+    {
+      "control_id": "PR.AT",
+      "status": "covered",
+      "evidence": "All employees must complete security awareness training when they join and once a year.",
+      "rationale": "Defines training at onboarding and annually.",
+      "recommendation": "",
+      "name": "Awareness and Training",
+      "function": "Protect"
+    },
+    {
+      "control_id": "PR.DS",
+      "status": "partial",
+      "evidence": "Confidential data must be encrypted in transit.",
+      "rationale": "Covers encryption in transit only; nothing on data at rest, retention or disposal.",
+      "recommendation": "Add requirements for encryption at rest, retention and secure disposal.",
+      "name": "Data Security",
+      "function": "Protect"
+    },
+    {
+      "control_id": "PR.PS",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No configuration, patching, logging or secure development requirements.",
+      "recommendation": "Add baseline configuration, patch management and logging requirements.",
+      "name": "Platform Security",
+      "function": "Protect"
+    },
+    {
+      "control_id": "PR.IR",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No resilience or network architecture requirements.",
+      "recommendation": "Add requirements for segmentation, redundancy and backups.",
+      "name": "Technology Infrastructure Resilience",
+      "function": "Protect"
+    },
+    {
+      "control_id": "DE.CM",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "Policy states continuous monitoring. (Downgraded: cited evidence could not be verified in the policy text.)",
+      "recommendation": "",
+      "name": "Continuous Monitoring",
+      "function": "Detect"
+    },
+    {
+      "control_id": "DE.AE",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No process to analyse events and identify incidents.",
+      "recommendation": "Define how alerts are triaged and declared as incidents.",
+      "name": "Adverse Event Analysis",
+      "function": "Detect"
+    },
+    {
+      "control_id": "RS.MA",
+      "status": "partial",
+      "evidence": "Employees must report suspected security incidents to the IT service desk immediately.",
+      "rationale": "Reporting is covered but there is no incident response process, roles or severity levels.",
+      "recommendation": "Add an incident response procedure with roles, severity levels and escalation.",
+      "name": "Incident Management",
+      "function": "Respond"
+    },
+    {
+      "control_id": "RS.AN",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No investigation, forensics or root cause analysis requirement.",
+      "recommendation": "Require investigation and root cause analysis for significant incidents.",
+      "name": "Incident Analysis",
+      "function": "Respond"
+    },
+    {
+      "control_id": "RS.CO",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No internal or external incident communication requirements.",
+      "recommendation": "Define who is notified, when, and by whom, including regulators and customers.",
+      "name": "Incident Response Reporting and Communication",
+      "function": "Respond"
+    },
+    {
+      "control_id": "RS.MI",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No containment or mitigation requirements.",
+      "recommendation": "Add containment and eradication steps to the incident procedure.",
+      "name": "Incident Mitigation",
+      "function": "Respond"
+    },
+    {
+      "control_id": "RC.RP",
+      "status": "gap",
+      "evidence": "",
+      "rationale": "No recovery or business continuity requirements.",
+      "recommendation": "Add recovery objectives and require tested recovery plans.",
+      "name": "Incident Recovery Plan Execution",
+      "function": "Recover"
+    },
+    {
+      "control_id": "RC.CO",
+      "status": "not_assessed",
+      "evidence": "",
+      "rationale": "Model did not return an assessment for this control.",
+      "recommendation": "",
+      "name": "Incident Recovery Communication",
+      "function": "Recover"
+    }
+  ],
+  "score": 29,
+  "counts": {
+    "covered": 4,
+    "partial": 4,
+    "gap": 13,
+    "not_assessed": 1
+  },
+  "warnings": [
+    "DE.CM: quoted evidence not found in policy; downgraded to gap."
+  ]
+}
