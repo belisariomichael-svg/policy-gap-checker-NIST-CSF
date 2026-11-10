@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
   const started = Date.now();
   try {
-    const raw = await generateAnalysisText(check.text, apiKey, process.env.GEMINI_MODEL ?? "gemini-2.5-flash-lite");
+    const raw = await generateAnalysisText(check.text, apiKey, process.env.GEMINI_MODEL ?? "gemini-3.5-flash-lite");
     const result = buildResult(extractJson(raw), check.text);
     console.log(JSON.stringify({ event: "analysis_ok", chars: check.text.length, ms: Date.now() - started, score: result.score, warnings: result.warnings.length }));
     return NextResponse.json(result);
