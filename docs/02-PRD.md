@@ -1,7 +1,5 @@
 # PRD: Policy Gap Checker (1 page)
 
-> If your course defines the 6 PRD components differently, rename the headings. Content below covers the usual six.
-
 **1. Problem and context.** Risk and compliance analysts spend hours manually mapping policies to framework controls, with inconsistent results and weak traceability to policy wording. NIST CSF 2.0 (2024) increases the re-mapping workload.
 
 **2. Target user.** Second-line risk/compliance analyst at a regulated firm (primary); small-company security lead preparing for audit (secondary).
