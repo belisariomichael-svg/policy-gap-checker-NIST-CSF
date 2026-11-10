@@ -1,10 +1,10 @@
 # Policy Gap Checker
 
-![CI](https://github.com/YOUR-USERNAME/policy-gap-checker/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/belisariomichael-svg/policy-gap-checker-NIST-CSF/actions/workflows/ci.yml/badge.svg)
 
 Paste a security policy and get a control-by-control check against **NIST CSF 2.0** (22 categories): status (covered / partial / gap), the exact policy wording that supports it, a rationale, and one recommended fix. Sign in to save reports. Built for second-line risk and compliance analysts who need a fast, traceable first pass.
 
-**Live app:** https://YOUR-APP.vercel.app  
+**Live app:** https://cyber-policy-gap-checker.vercel.app/ 
 **Demo (2 min):** YOUR-DEMO-LINK
 
 ## Why it is different from a chatbot
@@ -27,8 +27,8 @@ Also: zod (output validation), vitest (tests).
 
 ## Run locally
 ```bash
-git clone https://github.com/YOUR-USERNAME/policy-gap-checker.git
-cd policy-gap-checker
+git clone https://github.com/belisariomichael-svg/policy-gap-checker-NIST-CSF.git
+cd policy-gap-checker-NIST-CSF
 npm install
 cp .env.example .env.local   # then fill in the 4 values below
 npm run dev                   # http://localhost:3000
@@ -36,7 +36,7 @@ npm run dev                   # http://localhost:3000
 | Variable | Required | Description |
 |---|---|---|
 | `GEMINI_API_KEY` | yes | Google AI Studio key (server-side only) |
-| `GEMINI_MODEL` | no | Defaults to `gemini-2.5-flash-lite`; use a model your free tier allows |
+| `GEMINI_MODEL` | no | Defaults to `gemini-3.5-flash-lite`; use a model your free tier allows |
 | `NEXT_PUBLIC_SUPABASE_URL` | for sign-in/saving | Supabase project URL |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | for sign-in/saving | Supabase anon (publishable) key; safe to expose because of Row Level Security |
 
