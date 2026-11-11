@@ -5,7 +5,6 @@
 Paste a security policy and get a control-by-control check against **NIST CSF 2.0** (22 categories): status (covered / partial / gap), the exact policy wording that supports it, a rationale, and one recommended fix. Sign in to save reports. Built for second-line risk and compliance analysts who need a fast, traceable first pass.
 
 **Live app:** https://cyber-policy-gap-checker.vercel.app/ 
-**Demo (2 min):** YOUR-DEMO-LINK
 
 ## Why it is different from a chatbot
 - Fixed control catalog, so results are consistent.
